@@ -7,16 +7,22 @@ MENU
 
 div#menu{
 	margin: 0 auto;
-	width: 90%;
+	width: 100%;
 	height: 20em;
+	box-shadow: 
+        inset 0px 11px 8px -10px #CCC,
+        inset 0px -11px 8px -10px #CCC; 
+    overflow-y: auto;
 }
 
 div.menu-item{
-	height: 10%;
+	height: 20%;
 	margin: 1px;
 	cursor: pointer;
 
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 
+        inset 0px 1px 1px -1px #CCC,
+        inset 0px -11px 8px -10px #CCC; 
 }
 
 div.menu-item:hover{
