@@ -6,19 +6,22 @@ MENU
 
 
 div#menu{
-	width: 100%;
+	margin: 0 auto;
+	width: 90%;
 	height: 20em;
 }
 
 div.menu-item{
 	height: 10%;
-	border: 1px solid black;
 	margin: 1px;
 	cursor: pointer;
+
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 div.menu-item:hover{
-	background: red;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	transition: all 0.2s ease-in;
 }
 
 
