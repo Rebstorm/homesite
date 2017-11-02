@@ -19,14 +19,12 @@ div.menu-item{
 	height: 20%;
 	margin: 1px;
 	cursor: pointer;
-
-	box-shadow: 
-        inset 0px 1px 1px -1px #CCC,
-        inset 0px -11px 8px -10px #CCC; 
+	border: 1px solid black;
 }
 
 div.menu-item:hover{
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+	zoom: 110%;
 	transition: all 0.2s ease-in;
 }
 
