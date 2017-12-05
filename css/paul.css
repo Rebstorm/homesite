@@ -6,40 +6,44 @@ MENU
 
 
 div#menu{
-	z-index: 0;
-	text-align: center;
+	z-index: 3;
+	height: 3em;
 	width: 100%;
 	z-index: 0;
-	box-shadow:
-        inset 0px -11px 8px -10px #CCC;
-  overflow-y: hidden;
-	overflow-x: hidden;
-	margin-bottom: -10px;
+	box-shadow: inset 0px 5px 6px 0px rgba(42, 50, 50, 0.75);
+
+	padding: 0;
+	margin: 0;
 }
 
 div.menu-item{
 	display: inline-block;
-	height: 4em;
+	height: inherit;
 	width: 10%;
-	min-width: 200px;
+	min-width: 130px;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	z-index: 2;
-	background: #7B9475;
+	/*
+	border-radius: 2em 2em 0 0;
+	border: 1px solid #586261;
+	*/
 }
 
 div.menu-item:hover{
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 	transition: all 0.2s ease-in;
 	cursor: pointer;
 	overflow-x: hidden;
-	background: #98AD92;
-	transform: scale(1.2);
+	opacity: 0.5;
 	z-index: 4;
 }
 
 
 div#debug{
+	z-index: 0;
+}
+
+div.fragmented-content{
 	z-index: 0;
 }
 
