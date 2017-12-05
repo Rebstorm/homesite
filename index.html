@@ -16,21 +16,32 @@
 
         <!-- Beautiful Angular -->
         <script src="dep/angular.min.js"></script>
-        <script src="dep/angular-route.min.js"></script>        
+        <script src="dep/angular-route.min.js"></script>
         <script src="js/index.js"></script>
 
     </head>
     <body ng-app="Paul">
         <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">
-                upgrade your browser</a> to improve your experience and security.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Paul did not optimize your experience :(
+            Please download Firefox and win the internet. </p>
         <![endif]-->
+
+        <!--
         <div id="debug">
             <p>
                 <a href="#!link">Main</a>
             </p>
         </div>
-        
+
+        -->
+
+        <div id="menu">
+        	<div id="test1" class="menu-item">1</div>
+        	<div id="test2" class="menu-item">2</div>
+        	<div id="test3" class="menu-item">3</div>
+        	<div id="test4" class="menu-item">4</div>
+        </div>
+
         <div class="fragment-content" ng-view></div>
     </body>
 </html>
