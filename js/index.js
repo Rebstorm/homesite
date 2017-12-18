@@ -1,5 +1,8 @@
 var app = angular.module('Paul', ['ngRoute']);
 
+
+
+
 // The router of the angular app.
 app.config(function ($routeProvider) {
     $routeProvider
@@ -14,10 +17,12 @@ app.config(function ($routeProvider) {
         .otherwise({
             redirectTo: '/'
         });
+      // Start UI config yahoo pattern.
+      UiConfigs.init();
 });
 
 app.controller('indexController', function($scope) {
-    UiConfigs.init();
+    console.log("home again");
 });
 
 app.controller('mainController', function($scope) {
@@ -52,14 +57,23 @@ var UiConfigs = function(){
       tab.style.backgroundColor = color;
       tab.innerText = text;
 
+      // The on click button handler
+      makeEventHandler(tab, link);
+
       sequencer++;
 
       return tab;
   }
 
+  function makeEventHandler(e, link){
+    e.addEventListener("click", (e) => {
+      document.location = link;
+    });
+  }
+
 
   var tabs = [
-    { color: "#98AD92", link: "#main2",  text :"hello again"},
+    { color: "#98AD92", link: "#!link",  text :"hello again"},
     { color:"#7B9475", link: "#main", text: "hello world" },
     { color: "#98AD92", link: "#main2",  text :"hello again"},
     { color:"#7B9475", link: "#main", text: "hello world" }
