@@ -6,8 +6,7 @@ MENU
 
 
 div#menu{
-	z-index: 3;
-	height: 3em;
+	height: 100%;
 	width: 100%;
 	z-index: 0;
 	box-shadow: inset 0px 5px 6px 0px rgba(42, 50, 50, 0.75);
@@ -18,12 +17,12 @@ div#menu{
 
 div.menu-item{
 	display: inline-block;
-	height: inherit;
-	width: 10%;
-	min-width: 130px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	z-index: 2;
+	min-height: 10em;
+	width: 33.33%;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	opacity: 0.5;
 	/*
 	border-radius: 2em 2em 0 0;
 	border: 1px solid #586261;
@@ -33,9 +32,7 @@ div.menu-item{
 div.menu-item:hover{
 	transition: all 0.2s ease-in;
 	cursor: pointer;
-	overflow-x: hidden;
-	opacity: 0.5;
-	z-index: 4;
+	opacity: 1;
 }
 
 
@@ -45,6 +42,27 @@ div#debug{
 
 div.fragmented-content{
 	z-index: 0;
+}
+
+
+div.blinking {
+	animation: blinky 0.5s infinite;
+}
+
+
+@keyframes blinky {
+
+	0% {
+		opacity: 0.7;
+	}
+
+	50% {
+		opacity: inherit;
+	}
+
+	100% {
+		opacity: 0.7;
+	}
 }
 
 
