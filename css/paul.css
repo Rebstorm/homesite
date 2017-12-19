@@ -6,47 +6,69 @@ MENU
 
 
 div#menu{
+	position: relative;
+	margin: 0 auto;
 	height: 100%;
 	width: 100%;
 	z-index: 0;
-	box-shadow: inset 0px 5px 6px 0px rgba(42, 50, 50, 0.75);
-
+	/*box-shadow: inset 0px 5px 6px 0px rgba(42, 50, 50, 0.75);*/
+	max-width: 50em;
 	padding: 0;
-	margin: 0;
 }
 
 div.menu-item{
 	display: inline-block;
-	min-height: 10em;
+	min-height: 5em;
 	width: 33.33%;
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	opacity: 0.5;
+
 	/*
+	opacity: 0.5;
 	border-radius: 2em 2em 0 0;
 	border: 1px solid #586261;
 	*/
 }
-
+/*
 div.menu-item:hover{
 	transition: all 0.2s ease-in;
 	cursor: pointer;
 	opacity: 1;
 }
+*/
 
+/* TWO TONE BUTTON TRY #12321 */
+div.two-tone{
+	margin: 0 0 0 0%;
+	line-height: 5em;
+	font-size: 1.1em;
+	color: #ccc;
+	background-color: #555;
+	border: 0 none;
+	/*
+	box-shadow: 0 0px 0 #666, 0 4px 0 #444,
+	 						0 0px 0px rgba(0,0,0,0.6);
+							*/
+	cursor: pointer;
+	transition: all 0.1s ease-in;
+}
 
-div#debug{
-	z-index: 0;
+/* Hoover effect, maybe for a later thing? */
+div.two-tone:hover, div.two-tone:focus{
+
+}
+
+div.two-tone:active{
+	color: #fff;
+	box-shadow: 0 1px 0 #666, 0 2px 0 #444,
+							0 0px 0px rgba(0,0,0,0.9);
+	transform: translateY(3px);
+	animation: none;
 }
 
 div.fragmented-content{
 	z-index: 0;
-}
-
-
-div.blinking {
-	animation: blinky 0.5s infinite;
 }
 
 
