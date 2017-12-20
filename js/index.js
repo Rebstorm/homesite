@@ -26,7 +26,9 @@ app.controller('indexController', function($scope) {
 });
 
 app.controller('mainController', function($scope) {
-    console.log("hello world");
+    // Make visible.
+    //document.getElementById("index-menu").className = "new-window show explode-in";
+
 });
 
 
