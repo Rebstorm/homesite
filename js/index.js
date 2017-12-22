@@ -52,12 +52,14 @@ var UiConfigs = function(){
   }
 
   var sequencer = 0;
+
   function makeTab(color, link, text){
       var tab = document.createElement("div");
       tab.className = "menu-item two-tone";
       tab.id = "menu-item"+sequencer;
-      tab.style.backgroundColor = color;
+      tab.style.backgroundColor = "#fff";
       tab.innerText = text;
+      tab.setAttribute("data-text", text);
 
       // The on click button handler
       makeEventHandler(tab, link);
@@ -74,13 +76,17 @@ var UiConfigs = function(){
   }
 
 
+
   var tabs = [
     { color: "#98AD92", link: "#!link",  text :"hello again"},
     { color:"#7B9475", link: "#main", text: "hello world" },
     { color: "#98AD92", link: "#main2",  text :"hello again"},
     { color: "#98AD92", link: "#!link",  text :"hello again"},
     { color:"#7B9475", link: "#main", text: "hello world" },
-    { color: "#98AD92", link: "#main2",  text :"hello again"}
+    { color: "#98AD92", link: "#main2",  text :"hello again"},
+    { color: "#98AD92", link: "#main2",  text :"hello again"},
+    { color: "#98AD92", link: "#!link",  text :"hello again"},
+    { color:"#7B9475", link: "#main", text: "hello world" }
   ];
 
   return {
